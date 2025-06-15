@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyBliss - Premium Beauty Salon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">BeautyBliss</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services-menu">Services</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-elements">
+            <div class="floating-sphere"></div>
+            <div class="floating-sphere"></div>
+            <div class="floating-sphere"></div>
+            <div class="floating-sphere"></div>
+            <div class="floating-cube"></div>
+            <div class="floating-cube"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Look Your Best Every Day</h1>
+            <p>Experience luxury beauty treatments that enhance your natural radiance</p>
+            <a href="#booking" class="cta-btn">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services Menu Section -->
+    <section id="services-menu">
+        <div class="language-toggle">
+            <button class="lang-btn active" data-lang="en">English</button>
+            <button class="lang-btn" data-lang="ar">العربية</button>
+        </div>
+        
+        <h2 class="section-title animate-on-scroll fade-in">
+            <span class="lang-content" data-lang="en">Our Services Menu</span>
+            <span class="lang-content" data-lang="ar" style="display: none;">قائمة خدماتنا</span>
+        </h2>
+        
+        <div class="services-menu-grid animate-on-scroll slide-up">
+            <!-- Pedicure -->
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <div class="menu-content">
+                    <h3 class="service-name">
+                        <span class="lang-content" data-lang="en">Pedicure</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">باديكير</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-content" data-lang="en">Complete foot care and nail treatment</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">عناية كاملة بالقدم وعلاج الأظافر</span>
+                    </p>
+                    <div class="service-price">30 <span class="currency">SR</span></div>
+                </div>
+            </div>
+
+            <!-- Manicure -->
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-hand-sparkles"></i>
+                </div>
+                <div class="menu-content">
+                    <h3 class="service-name">
+                        <span class="lang-content" data-lang="en">Manicure</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">مانيكير</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-content" data-lang="en">Professional hand and nail care</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">عناية احترافية باليد والأظافر</span>
+                    </p>
+                    <div class="service-price">30 <span class="currency">SR</span></div>
+                </div>
+            </div>
+
+            <!-- Nail Installation -->
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <div class="menu-content">
+                    <h3 class="service-name">
+                        <span class="lang-content" data-lang="en">Nail Installation</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">تركيب الأظافر</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-content" data-lang="en">Artificial nail application and design</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">تطبيق وتصميم الأظافر الاصطناعية</span>
+                    </p>
+                    <div class="service-price">30 <span class="currency">SR</span></div>
+                </div>
+            </div>
+
+            <!-- Bath Oil for Hair -->
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-oil-can"></i>
+                </div>
+                <div class="menu-content">
+                    <h3 class="service-name">
+                        <span class="lang-content" data-lang="en">Bath Oil for Hair</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">حمام زيت للشعر</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-content" data-lang="en">Nourishing hair oil treatment</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">علاج مغذي بالزيت للشعر</span>
+                    </p>
+                    <div class="service-price">30 <span class="currency">SR</span></div>
+                </div>
+            </div>
+
+            <!-- Blonding Face -->
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-sparkles"></i>
+                </div>
+                <div class="menu-content">
+                    <h3 class="service-name">
+                        <span class="lang-content" data-lang="en">Blonding Face</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">تشقير الوجه</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-content" data-lang="en">Professional facial hair lightening</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">تفتيح شعر الوجه بشكل احترافي</span>
+                    </p>
+                    <div class="service-price">30 <span class="currency">SR</span></div>
+                </div>
+            </div>
+
+            <!-- Waxing up to Knees -->
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="menu-content">
+                    <h3 class="service-name">
+                        <span class="lang-content" data-lang="en">Waxing up to Knees</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">إزالة الشعر حتى الركبة</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-content" data-lang="en">Complete leg hair removal service</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">خدمة إزالة شعر الساق الكاملة</span>
+                    </p>
+                    <div class="service-price">30 <span class="currency">SR</span></div>
+                </div>
+            </div>
+
+            <!-- Hand Wax up to Arms -->
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <div class="menu-content">
+                    <h3 class="service-name">
+                        <span class="lang-content" data-lang="en">Hand Wax up to Arms</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">إزالة شعر اليد حتى الذراع</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-content" data-lang="en">Complete arm hair removal</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">إزالة شعر الذراع الكاملة</span>
+                    </p>
+                    <div class="service-price">30 <span class="currency">SR</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="opening-hours animate-on-scroll zoom-in">
+            <div class="hours-card">
+                <div class="hours-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="hours-content">
+                    <h3>
+                        <span class="lang-content" data-lang="en">Opening Hours</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">ساعات العمل</span>
+                    </h3>
+                    <p class="hours-text">
+                        <span class="lang-content" data-lang="en">Open Daily: 2:00 PM - 10:00 PM</span>
+                        <span class="lang-content" data-lang="ar" style="display: none;">مفتوح يومياً: 2:00 مساءً - 10:00 مساءً</span>
+                    </p>
+                    <div class="contact-whatsapp">
+                        <a href="https://wa.me/966581437287" class="whatsapp-contact">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>0581437287</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2 class="section-title animate-on-scroll fade-in">Book Your Appointment</h2>
+        <form id="bookingForm" class="booking-form animate-on-scroll slide-up">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service...</option>
+                        <option value="Pedicure">Pedicure - 30 SR</option>
+                        <option value="Manicure">Manicure - 30 SR</option>
+                        <option value="Nail Installation">Nail Installation - 30 SR</option>
+                        <option value="Bath Oil for Hair">Bath Oil for Hair - 30 SR</option>
+                        <option value="Blonding Face">Blonding Face - 30 SR</option>
+                        <option value="Waxing up to Knees">Waxing up to Knees - 30 SR</option>
+                        <option value="Hand Wax up to Arms">Hand Wax up to Arms - 30 SR</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Preferred Date *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time *</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select time...</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                        <option value="22:00">10:00 PM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="Any special requests or notes..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Book Appointment</button>
+        </form>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2 class="section-title animate-on-scroll fade-in">Our Work Gallery</h2>
+        <div class="gallery-grid animate-on-scroll zoom-in">
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title animate-on-scroll fade-in">Contact Us</h2>
+        <div class="contact-grid animate-on-scroll slide-up">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="contact-icon fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Riyadh, Saudi Arabia</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="contact-icon fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+966 58 143 7287</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="contact-icon fas fa-clock"></i>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>Daily: 2:00 PM - 10:00 PM</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/966581437287" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    Contact via WhatsApp
+                </a>
+            </div>
+            <div class="map-container">
+                <i class="fas fa-map-marked-alt" style="font-size: 3rem;"></i>
+                <p>Map integration available</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

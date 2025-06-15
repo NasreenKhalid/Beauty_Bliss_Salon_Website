@@ -1,0 +1,35 @@
+{
+  "name": "beautybliss-website",
+  "version": "1.0.0",
+  "description": "BeautyBliss - Premium Beauty Salon Website with Bilingual Support",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . --single",
+    "build": "echo 'Static website - no build required'",
+    "deploy": "echo 'Ready for deployment to any static hosting service'"
+  },
+  "keywords": [
+    "beauty-salon",
+    "website",
+    "bilingual",
+    "arabic",
+    "english",
+    "responsive",
+    "booking",
+    "airtable"
+  ],
+  "author": "BeautyBliss",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/beautybliss-website.git"
+  },
+  "homepage": "https://yourusername.github.io/beautybliss-website/",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
