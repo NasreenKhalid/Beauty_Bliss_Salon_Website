@@ -10,6 +10,21 @@
 </head>
 
 <body>
+
+     <!-- Special Offer Banner (can be hidden/shown) -->
+    <div class="special-banner" id="specialBanner" style="display: block;">
+        <div class="banner-content">
+            <div class="banner-text">
+                <span class="lang-content" data-lang="en">🌙 Eid Special: Up to 50% OFF Beauty Packages!</span>
+                <span class="lang-content" data-lang="ar" style="display: none;">🌙 عرض العيد: خصم يصل إلى 50% على باقات الجمال!</span>
+            </div>
+            <a href="eid-special.html" class="banner-cta">
+                <span class="lang-content" data-lang="en">View Offers</span>
+                <span class="lang-content" data-lang="ar" style="display: none;">عرض العروض</span>
+            </a>
+            <button class="banner-close" onclick="closeBanner()">×</button>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <a href="#home" class="logo">BeautyBliss</a>
