@@ -37,6 +37,16 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => {
     observer.observe(el);
 });
 
+function closeModal() {
+    const modal = document.getElementById('offerModal');
+    if (modal) {
+        modal.classList.add('hidden');
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 400);
+    }
+}
+
 // Language switching functionality
 let currentLanguage = 'en';
 
