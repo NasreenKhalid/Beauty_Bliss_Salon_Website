@@ -164,6 +164,48 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Banner functionality
+function closeBanner() {
+    const banner = document.getElementById('specialBanner');
+    
+    banner.style.transform = 'translateY(-100%)';
+    setTimeout(() => {
+        banner.style.display = 'none';
+        document.body.classList.add('banner-hidden');
+        
+        // Store banner state in localStorage
+        localStorage.setItem('bannerClosed', 'true');
+    }, 300);
+}
+
+// Function to show banner for new promotions
+function showBanner() {
+    const banner = document.getElementById('specialBanner');
+    
+    // Clear any previous close state
+    localStorage.removeItem('bannerClosed');
+    
+    // Show banner
+    banner.style.display = 'block';
+    banner.style.transform = 'translateY(0)';
+    document.body.classList.remove('banner-hidden');
+}
+
+// Check if banner was previously closed
+function checkBannerState() {
+    const bannerClosed = localStorage.getItem('bannerClosed');
+    const banner = document.getElementById('specialBanner');
+    
+    if (bannerClosed === 'true') {
+        banner.style.display = 'none';
+        document.body.classList.add('banner-hidden');
+    } else {
+        // Ensure banner is visible by default
+        banner.style.display = 'block';
+        document.body.classList.remove('banner-hidden');
+    }
+}
+
 // Set minimum date for booking form to today
 document.addEventListener('DOMContentLoaded', () => {
     const dateInput = document.getElementById('date');
@@ -185,6 +227,23 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize with English
     switchLanguage('en');
+    
+    // Force banner to show and ensure it's visible
+    localStorage.removeItem('bannerClosed');
+    
+    // Ensure banner is visible on page load
+    const banner = document.getElementById('specialBanner');
+    if (banner) {
+        banner.style.display = 'block';
+        banner.style.position = 'fixed';
+        banner.style.top = '0';
+        banner.style.zIndex = '1001';
+        banner.style.width = '100%';
+        document.body.classList.remove('banner-hidden');
+    }
+    
+    // Check banner state
+    checkBannerState();
 });
 
 // Add loading animation to CTA button
