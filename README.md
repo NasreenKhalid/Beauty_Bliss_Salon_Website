@@ -60,8 +60,8 @@ For the booking system to work, you need a backend server. You can either:
 ### Update Contact Information
 
 Edit these in `index.html` and `script.js`:
-- Phone number: Currently `0581437287`
-- WhatsApp link: `https://wa.me/966581437287`
+- Phone number: Currently `----------`
+- WhatsApp link: `https://wa.me/966-------`
 - Location: Currently "Riyadh, Saudi Arabia"
 
 ### Modify Services
@@ -99,17 +99,6 @@ To add more languages:
 
 ## Deployment Examples
 
-### Netlify Deployment
-
-1. Connect your GitHub repository to Netlify
-2. Build settings: Leave empty (static site)
-3. Deploy directory: `beautybliss-website/`
-
-### Vercel Deployment
-
-1. Import your GitHub repository
-2. Framework preset: Other
-3. Root directory: `beautybliss-website/`
 
 ### GitHub Pages
 
@@ -148,7 +137,7 @@ MIT License - Feel free to use for personal and commercial projects.
 ## Support
 
 For customization or technical support:
-- WhatsApp: +966 58 143 7287
+- WhatsApp: +966 ---------
 - Operating Hours: Daily 2:00 PM - 10:00 PM
 
 ---
