@@ -235,8 +235,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Initialize with English
-    switchLanguage('en');
+    // Initialize with Arabic
+switchLanguage('ar');
     
     // Force banner to show and ensure it's visible
     localStorage.removeItem('bannerClosed');
