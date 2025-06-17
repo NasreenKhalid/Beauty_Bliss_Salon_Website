@@ -34,6 +34,7 @@ body {
 .modal-overlay.hidden {
     opacity: 0;
     pointer-events: none;
+    display: none !important;
 }
 .modal-content {
     background: linear-gradient(135deg, #ff6b6b 0%, #ffd700 40%, #ff6b6b 100%);
