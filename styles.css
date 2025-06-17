@@ -21,6 +21,22 @@ body.rtl {
     text-align: right;
 }
 
+/* Navigation Direction Override */
+.navbar {
+    direction: ltr !important;
+}
+.navbar .nav-links {
+    direction: ltr !important;
+    justify-content: flex-end !important;
+}
+/* Only content inside nav links follows language direction */
+.rtl .nav-links a {
+    direction: rtl;
+}
+body:not(.rtl) .nav-links a {
+    direction: ltr;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
