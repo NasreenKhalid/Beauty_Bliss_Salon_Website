@@ -8,6 +8,19 @@ html {
     scroll-behavior: smooth;
 }
 
+/* RTL Support for Arabic */
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+body.rtl {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+.rtl .modal-content {
+    direction: rtl;
+    text-align: right;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
